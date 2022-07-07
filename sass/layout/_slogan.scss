@@ -1,0 +1,55 @@
+
+.slogan {
+    background-color: #2F303A;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/q.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+.slogan-content__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        text-transform:uppercase;
+        margin-bottom: 30px;
+    }
+    
+    .slogan-content__btn {
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        @extend %align-list;
+        text-align: center;  
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background-color: #2196F3;
+       padding: 10px 32px 10px 32px;
+       border: 0px;
+       margin-right: auto;
+      margin-left: auto;
+      border-radius: 4px;
+      transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .slogan-content__btn:focus,
+    .slogan-content__btn:hover {
+        cursor: pointer;
+        
+    }
+    
+    .slogan-container {
+        padding-top: 200px; 
+        padding-bottom: 200px;
+        
+      }
+
+

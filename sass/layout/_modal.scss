@@ -1,0 +1,312 @@
+.backdrop-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 300ms linear, visibility 300ms linear ;
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: #fff;
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms linear;
+    padding: 40px 40px 40px 40px;
+
+    .modal-content__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        font-style: normal;
+    }
+    
+    .modal-modal-content__input:hover,
+    .modal-modal-content__input:focus { 
+        cursor: pointer;
+        fill: var(--accent-color);
+        border-radius: 4px;
+        outline: 1px solid var(--accent-color);
+}
+
+.modal-content__input:hover + .modal-content__icon-tel {
+   
+    
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+    
+}
+
+.modal-content__input:hover + .modal-content__icon-name {
+
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+}
+
+.modal-content__input:hover + .modal-content__icon-email {
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+}
+
+.modal-content__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px 12px 42px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}    
+
+.modal-content__input-tel {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px 12px 42px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-content__form-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.modal-content__icon-name {
+    position: absolute;
+    top: 104px;
+    left: 52px;
+    width: 18px;
+    height: 18px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-content__icon-name:hover,
+  .modal-content__icon-name:focus{
+    
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+}
+
+.modal-content__icon-tel {
+    position: absolute;
+    top: 171.76px;
+    left: 53px;
+    width: 18px;
+    height: 18px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-content__icon-tel:hover,
+.modal-content__icon-tel:focus{
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+}
+
+  .modal-content__icon-email {
+    position: absolute;
+    top: 240px;
+    left: 52px;
+    width: 18px;
+    height: 18px;
+    
+  }
+
+  .modal-content__icon-email:hover,
+  .modal-content__icon-email:focus{
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+}
+
+.modal-content__close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    @extend %align-list;
+    justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-content__close-btn:focus,
+.modal-content__close-btn:hover {
+    cursor: pointer;
+    fill: var(--accent-color);
+    
+}
+    
+
+
+.modal-content__btn {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    @extend %align-list;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border: 0px;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    padding: 10px 55.5px 10px 55.5px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    position: absolute;
+    top: 491px;
+    left: 164px;
+    right: 164px;
+}
+}
+
+
+
+.modal-content__input:hover,
+.modal-content__input:focus {
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+    border-radius: 4px;
+    
+}
+
+
+.modal-content__comments {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: #212121;
+    &:hover,
+    &:focus {
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+    fill: var(--accent-color);
+    outline: var(--accent-color);
+}
+
+}
+
+
+.modal-content__checkbox-text a {
+    
+color: rgba(33, 150, 243, 1)
+
+}
+
+.modal-content__checkbox-text {
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    color: #757575;
+    @extend %align-list;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+
+.modal-content__checkbox-text-add {
+    margin-left: 4px;
+}
+
+.modal-content__checkbox-text::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8.38px;
+}
+
+
+
+
+
+.modal-content__checkbox-icon:checked + .modal-content__checkbox-text::before {
+    background-color: #2196F3;
+    border: none;
+    background-image: url(../pict/che.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+  textarea {
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    font-family: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+
+    color: rgba(33, 33, 33, 0.2);
+    width: 448px;
+    height: 120px;
+    resize: none;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+  }
+ 
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+
+

@@ -1,0 +1,101 @@
+
+    .invite-content__form {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+    }
+    
+    
+    
+    .invite-content__line {
+        display: flex;
+    
+        flex-direction: column;
+    }
+    
+    .invite-content__title {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-style: normal;
+    }
+    
+    .invite-content__btn {
+        width: 200px;
+        height: 50px;
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        @extend %align-list;
+        justify-content: center;
+        text-align: center;  
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+       /*-----isnt neccessary----------*/
+        background-color: #2196F3;
+       padding: 10px 10px ;
+       border: 0px;
+       margin-right: auto;
+      margin-left: 12px;
+      border-radius: 4px;
+      transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+    }
+    
+    .invite-content__btn:focus,
+    .invite-content__btn:hover {
+        cursor: pointer;
+        
+    }
+    
+    .invite-content__btn-open {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .invite-content__input {
+        width: 358px;
+        height: 50px;
+        background: #2F303A;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 15px;
+        padding-right: 16px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        color: #ffffff;
+    }
+    
+    .invite-content__input:hover,
+    .invite-content__input:focus {
+        transition: transform 250ms linear;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background: #2F303A;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        outline: none;
+    }
+    
+    .invite-content__icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        margin-right: 13px;
+    }
+
+
+
+
+
+
+
+
