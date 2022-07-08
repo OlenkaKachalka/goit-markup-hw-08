@@ -2,11 +2,21 @@
 .slogan {
     background-color: #2F303A;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/q.jpg);
-    background-size: cover;
+    // background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1600px;
+    // max-width: 1600px;
     background-position: center;
     margin: 0 auto;
+    
+    
+
+    @media  screen and (max-width:480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/lo.jpg);
+        // background-size: contain;
+        // background-position: center;
+        max-width: 480px;
+        height: 400px;
+    }
 }
 
 
@@ -18,7 +28,21 @@
         letter-spacing: 0.06em;
         color: #FFFFFF;
         text-transform:uppercase;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
+        @media  screen and (max-width:480px) {
+            font-style: normal;
+            font-size: 26px;
+            line-height: 1.62;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-weight: 900;
+            padding-top: 118px;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 30px;
+            
+        }
     }
     
     .slogan-content__btn {
@@ -38,6 +62,10 @@
       border-radius: 4px;
       transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media  screen and (max-width:480px){
+            margin-bottom: 118px;
+            
+        }
     }
     
     .slogan-content__btn:focus,
@@ -47,9 +75,11 @@
     }
     
     .slogan-container {
-        padding-top: 200px; 
-        padding-bottom: 200px;
         
-      }
+        max-width: 480px;
+        // padding-top: 200px; 
+        // padding-bottom: 200px;
+        
+    }
 
 
