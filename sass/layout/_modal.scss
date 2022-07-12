@@ -9,6 +9,7 @@
     &.is-hidden .modal {
         transform: translate(-50%, -50%) scale(0);
     }
+   
 }
 
 
@@ -26,11 +27,8 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms linear;
     padding: 40px 40px 40px 40px;
-    @media  screen and (max-width:480px){
-        width: 450px;
-        height: 609px;
-    }
-    }
+}
+
 
     .modal-content__title {
         font-weight: 700;

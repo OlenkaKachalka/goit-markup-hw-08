@@ -6,6 +6,7 @@
     
 nav {
     @extend %align-list;
+    
 }
 
 .logo {
@@ -16,6 +17,12 @@ nav {
     line-height: 1,19;
     letter-spacing: 0.03em;
     color: #2196F3;
+    @media screen and (min-width:480px) {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    }
 }
 
 .header-logo-accent-main {
@@ -27,7 +34,8 @@ nav {
 }
 
 .nav-list {
-    display: flex;
+    // display: flex;
+    display: none;
 }
 
 .nav-link-maine::after {
@@ -94,7 +102,8 @@ nav {
 } 
 
     .connect {
-        @extend %align-list;
+        // @extend %align-list;
+        display: none;
         margin-left: auto;
     }
   
@@ -195,5 +204,110 @@ nav {
     }
     
 
+    .menu-open-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mob-menu {
+        position: fixed;
+        background-color: #fff;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 21px;
+        padding-left: 40px;
+        padding-right: 25.33px;
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    .menu-list {
+        padding-bottom: 48px;
+    }
+
+    .menu-close-btn {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 8.33px;
+    }
+
+    .menu-item-studia {
+        margin-bottom: 35.71px;
+        width: 139px;
+        height: 48.29px;
+    }
+
+    .menu-item-portfolio {
+        margin-bottom: 32px;
+        width: 219px;
+        height: 48px;
+    }
+
+    .menu-item-contact {
+        width: 192px;
+        height: 48px;
+    }
 
 
+    .menu-link {
+        font-size: 40px;
+        line-height: 1.18px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        font-weight: 500;
+    }
+
+    .menu-connect-list {
+        
+        margin-bottom: 64px;
+    }
+
+    .menu-connect-tel {
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+        font-weight: 500;
+        margin-bottom: 32px;
+    }
+
+    .menu-connec-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    font-style: normal;
+    }
+
+    .menu-soc-list {
+        display: flex;
+    }
+
+    .menu-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    font-style: normal;
+    
+    }
+
+    .menu-soc-item:not(:last-child) {
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .menu-soc-item:not(:last-child){
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+
+    }

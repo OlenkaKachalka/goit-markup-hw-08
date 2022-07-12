@@ -1,6 +1,9 @@
 .example {
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (min-width:480px) {
+        display: none;
+    }
 }
     .example-content__title {
         @include font(700, 36px, 1.17, 0.03em);
