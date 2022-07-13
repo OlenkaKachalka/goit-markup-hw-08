@@ -1,41 +1,30 @@
 
 .slogan {
     background-color: #2F303A;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/q.jpg);
-    // background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    // max-width: 1600px;
     background-position: center;
     margin: 0 auto;
-    
-    
-
     @media  screen and (max-width:480px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/lo.jpg);
-        // background-size: contain;
-        // background-position: center;
         max-width: 480px;
         height: 400px;
     }
     @media  screen and (max-width:768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/r.jpg);
-        // background-size: contain;
-        // background-position: center;
         max-width: 768px;
         height: 400px;
     }
+
+    
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/q.jpg);
+        max-width: 1600px;
+        height: 600px;
+    
 }
 
 
 .slogan-content__title {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        text-transform:uppercase;
-        // margin-bottom: 30px;
     
 
         @media  screen and (max-width:768px) {
@@ -64,10 +53,22 @@
             padding-right: 60px;
             margin-bottom: 30px;
             width: 450px;
-            margin-right: 0;
-
-            
+            margin-right: 0;  
         }
+
+       
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        text-transform:uppercase;
+        width: 696px;
+        height: 120px;
+        margin-left: 237px;
+        margin-bottom: 30px;
+        
     }
     
     .slogan-content__btn {
@@ -106,9 +107,12 @@
         @media  screen and (min-width:768px){
         width: 738px;
         }
-        // padding-top: 200px; 
-        // padding-bottom: 200px;
-        
+        @media  screen and (min-width:1200px){
+            width: 1170px;
+        padding-top: 200px; 
+        padding-bottom: 200px;
+        text-align: center;
+        }
     }
 
 

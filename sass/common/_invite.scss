@@ -6,15 +6,22 @@
     @media screen and (min-width:768px) {
     width: 738px;
     }
+    @media screen and (min-width:1200px) {
+        width: 570px;
+        }
     }
 
     
     .invite-content__form {
-        // display: flex;
-        flex-direction: column;
-        flex-direction: row;
         @media screen and (min-width:480px) {
             width: 450px;
+        }
+        @media screen and (min-width:1200px) {
+            display: flex;
+            width: 570px;
+        // flex-direction: column;
+        // flex-direction: row;
+        // width: 358px;
         }
     }
     
@@ -27,7 +34,6 @@
     }
     
     .invite-content__title {
-        // margin-top: 12px;
         margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
@@ -45,6 +51,11 @@
             margin-top: 60px;
             margin-left: 267px;
     }
+        @media screen and (min-width:1200px) {
+            margin-top: 12px;
+            margin-left: 0;
+            width: 200px;
+        }
 }
 
     .invite-content__btn {
@@ -63,8 +74,6 @@
         background-color: #2196F3;
        padding: 10px 10px ;
        border: 0px;
-    //    margin-right: auto;
-    //   margin-left: 12px;
       border-radius: 4px;
       transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,6 +84,10 @@
         @media screen and (min-width:768px) {
             margin-left: 276px;
             margin-top: 20px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-left: 12px;
+            margin-top: 0;
         }
     }
     
@@ -90,8 +103,6 @@
     }
     
     .invite-content__input {
-        // width: 358px;
-        // height: 50px;
         background: #2F303A;
         box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
@@ -109,6 +120,11 @@
             width: 450px;
             height: 50px;
             margin-left: 151px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 358px;
+            height: 50px;
+            margin-left: 0;
         }
     }
     

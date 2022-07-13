@@ -17,20 +17,24 @@ ul {
 
 .header {
     background-color: white;
+    @media screen and (min-width:1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
+    }
 }
 
 .main-footer {
-    // width: 231px;
-    // margin-right: 70px;
     @media screen and (min-width:768px) {
         width: 232px;
         height: 79px;
         margin-right: 82.5px;
         margin-left: 62px;
     }
-
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+        width: 231px;
+        margin-left: 0;
+    }
     
 }
 

@@ -2,6 +2,9 @@
     background-color:#F5F4FA;
     padding-bottom: 60px;
     padding-top: 60px;
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+    }
 }
 
 .team-content__main-title {
@@ -44,12 +47,16 @@
     
     .team-content__list {
         display: flex;
-        flex-wrap: wrap;
         gap: 30px;
         @media screen and (min-width:768px) {
            width: 738px;
+           flex-wrap: wrap;
         }
-    
+        @media screen and (min-width:1200px) {
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+        }
     }
 
     

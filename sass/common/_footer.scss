@@ -6,8 +6,10 @@
         max-width: 480px;
     }
     @media screen and (min-width:768px) {
-        max-width: 768px;
-        
+        max-width: 768px;   
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;   
     }
 }
 
@@ -27,6 +29,17 @@
             height: 28px;
             margin-left: 38px;
         }
+        @media screen and (min-width:1200px) {
+            font-family: 'Raleway',sans-serif;
+        font-style: normal;
+        @include font(700, 26px, 1.19, 0.03em);
+        color: #2196F3;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        }
     
     }
     
@@ -36,6 +49,9 @@
 
     .footer-content__list {
         text-align: center;
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
     }
     
      .footer-content__tel {
@@ -67,11 +83,15 @@
     }
 
     .footer-content__container {
-    //     display: flex;
+    
     @media screen and (min-width:768px) {
         width: 738px;
         display: flex;
         flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        display: flex;
     }
 
     }

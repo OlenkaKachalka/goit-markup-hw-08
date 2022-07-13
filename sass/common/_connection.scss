@@ -1,15 +1,12 @@
 .connection {
-    // margin-right: 93px;
     margin-left: 82.5px;
-    
+    @media screen and (min-width:1200px) {
+        margin-right: 93px;
+        margin-left: 0;
+    }
 
 }
 
-    // .connection-content__title {
-    //     // margin-bottom: 20px;
-    //     // margin-top: 12px;
-        
-    // }
     
     .connection-content__item {
         width:44px;
@@ -71,7 +68,11 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        
+        @media screen and (min-width:1200px){
+            margin-bottom: 20px;
+            margin-top: 12px;
+            text-align: left;
+            }
     }
 
 
