@@ -1,8 +1,21 @@
 
+   .invite {
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+    @media screen and (min-width:768px) {
+    width: 738px;
+    }
+    }
+
+    
     .invite-content__form {
-        display: flex;
+        // display: flex;
         flex-direction: column;
         flex-direction: row;
+        @media screen and (min-width:480px) {
+            width: 450px;
+        }
     }
     
     
@@ -14,7 +27,7 @@
     }
     
     .invite-content__title {
-        margin-top: 12px;
+        // margin-top: 12px;
         margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
@@ -23,8 +36,17 @@
         text-transform: uppercase;
         color: #FFFFFF;
         font-style: normal;
+        @media screen and (min-width:480px) {
+            text-align: center;
+            width: 450px;
+        }
+        @media screen and (min-width:768px) {
+            width: 219px;
+            margin-top: 60px;
+            margin-left: 267px;
     }
-    
+}
+
     .invite-content__btn {
         width: 200px;
         height: 50px;
@@ -41,12 +63,19 @@
         background-color: #2196F3;
        padding: 10px 10px ;
        border: 0px;
-       margin-right: auto;
-      margin-left: 12px;
+    //    margin-right: auto;
+    //   margin-left: 12px;
       border-radius: 4px;
       transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
+        @media screen and (min-width:480px) {
+            margin-left: 125px;
+            margin-top: 20px;
+        }
+        @media screen and (min-width:768px) {
+            margin-left: 276px;
+            margin-top: 20px;
+        }
     }
     
     .invite-content__btn:focus,
@@ -61,8 +90,8 @@
     }
     
     .invite-content__input {
-        width: 358px;
-        height: 50px;
+        // width: 358px;
+        // height: 50px;
         background: #2F303A;
         box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
@@ -72,6 +101,15 @@
         padding-bottom: 15px;
         padding-left: 16px;
         color: #ffffff;
+        @media screen and (min-width:480px) {
+            width: 450px;
+            height: 50px;
+        }
+        @media screen and (min-width:768px) {
+            width: 450px;
+            height: 50px;
+            margin-left: 151px;
+        }
     }
     
     .invite-content__input:hover,

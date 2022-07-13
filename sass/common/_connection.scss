@@ -1,11 +1,15 @@
 .connection {
-    margin-right: 93px;
+    // margin-right: 93px;
+    margin-left: 82.5px;
+    
+
 }
 
-    .connection-content__title {
-        margin-bottom: 20px;
-        margin-top: 12px;
-    }
+    // .connection-content__title {
+    //     // margin-bottom: 20px;
+    //     // margin-top: 12px;
+        
+    // }
     
     .connection-content__item {
         width:44px;
@@ -16,6 +20,9 @@
     .connection-content__list {
         display: flex;
         justify-content: center;
+        @media screen and (min-width:480px) {
+            margin-bottom: 60px;
+        }
     }
     
     .connection-content__item:first-child {
@@ -59,6 +66,11 @@
         text-transform: uppercase;
         font-style: normal;
         color: #FFFFFF;
+        @media screen and (min-width:480px) {
+            
+            margin-bottom: 20px;
+            text-align: center;
+        }
         
     }
 

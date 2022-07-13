@@ -35,7 +35,12 @@ nav {
 
 .nav-list {
     // display: flex;
+    @media screen and (min-width:480px){
     display: none;
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
 }
 
 .nav-link-maine::after {
@@ -103,13 +108,21 @@ nav {
 
     .connect {
         // @extend %align-list;
+        @media screen and (min-width:480px){
         display: none;
         margin-left: auto;
+        }
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            width: 123px;
+            margin-left: 84px;
+        }
     }
   
-    .header-connect {
-        margin-left: auto;
-    }
+    // .header-connect {
+    //     // margin-left: auto;
+    // }
     
     
     .header-connect-list:not(:last-child) {
@@ -207,6 +220,9 @@ nav {
     .menu-open-btn {
         display: block;
         margin-left: auto;
+        @media screen and (min-width:768px) {
+            display: none;
+        }
     }
 
     .mob-menu {
@@ -226,6 +242,9 @@ nav {
         height: 100%;
         justify-content: space-between;
         overflow: auto;
+        @media screen and (min-width:768px) {
+            display: none;
+        }
     }
 
     .menu-list {

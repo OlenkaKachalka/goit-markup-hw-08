@@ -17,6 +17,13 @@
         max-width: 480px;
         height: 400px;
     }
+    @media  screen and (max-width:768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../pict/r.jpg);
+        // background-size: contain;
+        // background-position: center;
+        max-width: 768px;
+        height: 400px;
+    }
 }
 
 
@@ -29,6 +36,21 @@
         color: #FFFFFF;
         text-transform:uppercase;
         // margin-bottom: 30px;
+    
+
+        @media  screen and (max-width:768px) {
+            font-size: 26px;
+            line-height: 1.62;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 118px;
+            padding-bottom: 30px;
+            width: 738px;
+            margin-right: 0;
+        }
+
         @media  screen and (max-width:480px) {
             font-style: normal;
             font-size: 26px;
@@ -41,6 +63,9 @@
             padding-left: 60px;
             padding-right: 60px;
             margin-bottom: 30px;
+            width: 450px;
+            margin-right: 0;
+
             
         }
     }
@@ -75,8 +100,12 @@
     }
     
     .slogan-container {
-        
-        max-width: 480px;
+        @media  screen and (max-width:480px){
+            width: 450px;
+            }
+        @media  screen and (min-width:768px){
+        width: 738px;
+        }
         // padding-top: 200px; 
         // padding-bottom: 200px;
         
