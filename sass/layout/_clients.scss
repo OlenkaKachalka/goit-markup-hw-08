@@ -1,16 +1,20 @@
 .clients {
-    
+    @media screen and (min-width:480px) {
+       padding-top: 60px;
+       padding-bottom: 60px;
+    }
     @media screen and (min-width:768px) {
         margin-top: 60px;
         margin-bottom: 60px;
+    }
         @media screen and (min-width:1200px) {
             padding-top: 94px;
-            margin-top: 0;
+            margin-top: 0px;
             padding-bottom: 94px;
-            margin-bottom: 0;
+            margin-bottom: 0px;
         }
     }
-}
+
 .clients-content__title {
         
         margin-bottom: 50px;
@@ -31,7 +35,7 @@
             font-size: 28px;
             width: 738px;
         }
-        @media screen and (min-width:768px){
+        @media screen and (min-width:1200px){
             text-align: center;
             color: var(--header-color);
             @include font(700, 36px, 1.17, 0.03em);

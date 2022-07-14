@@ -1,7 +1,7 @@
 
    .invite {
     @media screen and (min-width:480px) {
-        width: 480px;
+        width: 450px;
     }
     @media screen and (min-width:768px) {
     width: 738px;
@@ -45,6 +45,7 @@
         @media screen and (min-width:480px) {
             text-align: center;
             width: 450px;
+            margin: 0;
         }
         @media screen and (min-width:768px) {
             width: 219px;
@@ -87,7 +88,7 @@
         }
         @media screen and (min-width:1200px) {
             margin-left: 12px;
-            margin-top: 0;
+            
         }
     }
     
@@ -115,6 +116,7 @@
         @media screen and (min-width:480px) {
             width: 450px;
             height: 50px;
+            margin-top: 20px;
         }
         @media screen and (min-width:768px) {
             width: 450px;

@@ -2,6 +2,19 @@
     & .container {
         display: flex;
         margin: 0;
+        height: 80px;
+        @media screen and (min-width:480px) {
+            height: 60px;
+            }
+            @media screen and (min-width:768px) {
+                width: 738px;
+                height: 80px;
+            }
+            @media screen and (min-width:1200px) {
+                height: 80px;
+                margin:0 auto;
+                width: 1170px;
+                }
     }
 } 
     
@@ -120,25 +133,36 @@ nav {
         @media screen and (min-width:480px){
         display: none;
         margin-left: auto;
+        
         }
+
         @media screen and (min-width:768px) {
             display: flex;
             flex-direction: column;
-            margin-left: 84px;
+            margin-top: 21px;
+            margin-bottom: 21px;  
         }
+        
         @media screen and (min-width:1200px) {
             display: flex;
             align-items: center;
             margin-left: 305px;
             flex-direction: row;
+
         }
+
+        
     }
   
-    
-    
-    
-    .header-connect-list:not(:last-child) {
-        margin-right: 50px;
+    .header-connect {
+        @media screen and (min-width:768px) {
+            width: 123px;
+            height: 14px;
+        }
+        @media screen and (min-width:480px) {
+            width: 123px;
+            height: 38px;
+        }
     }
     
     .connect-tel {
@@ -152,6 +176,15 @@ nav {
         @media screen and (min-width:1200px){
             display: flex;
             width: 142px;
+        }
+        @media screen and (min-width:768px) {
+            font-size: 12px;
+            line-height: 1.17;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #757575;
+            
+
         }
     }
     
@@ -172,6 +205,19 @@ nav {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
+    .connect-list {
+        @media screen and (min-width:768px) {
+        width: 145px;
+        margin-bottom: 10px;
+        height: 14px;
+        }
+        @media screen and (min-width:768px) {
+            width: auto;
+            margin-bottom: 10px;
+            height: 16px;
+            }
+    }    
+
     .connect-mail {
         font-weight: 500;
         font-size: 14px;
@@ -187,6 +233,18 @@ nav {
             font-weight: 500;
             letter-spacing: 0.02em;
             color: #757575;
+            margin-right: 30px;
+            
+        }
+        @media screen and (min-width:768px) {
+            font-size: 12px;
+            line-height: 1.17;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #757575;
+            
+            
+
         }
     }
     
@@ -213,6 +271,10 @@ nav {
         width: 14px;
         height: 10px;
         }
+        @media screen and (min-width:1200px) {
+            width: 16px;
+            height: 12px;
+            }
     }
 
     
@@ -229,6 +291,11 @@ nav {
         vertical-align: middle;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width:768px) {
+            width: 10px;
+            height: 14px;
+
+        }
     }
 
     .header-icon-phone {
@@ -246,6 +313,14 @@ nav {
     .menu-open-btn {
         display: block;
         margin-left: auto;
+        @media screen and (min-width:480px) {
+            width: 24px;
+            height: 16px;
+            margin-top: 22px;
+            margin-right: 2px;
+            border-color: transparent;
+            background-color: #fff;
+        }
         @media screen and (min-width:768px) {
             display: none;
         }
@@ -254,6 +329,16 @@ nav {
         }
 
     }
+
+    .icon-menu_open {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    
 
     .mob-menu {
         position: fixed;
@@ -288,7 +373,19 @@ nav {
         display: block;
         margin-left: auto;
         margin-bottom: 8.33px;
+        width: 18.67px;
+        height: 18.67px;
+        border-color: transparent;
+        background-color: #fff;
     }
+
+    .icon-menu_close {
+        width: 18.67px;
+        height: 18.67px;
+
+    }
+
+
 
     .menu-item-studia {
         margin-bottom: 35.71px;
@@ -319,6 +416,7 @@ nav {
     .menu-connect-list {
         
         margin-bottom: 64px;
+        height: 90px;
     }
 
     .menu-connect-tel {
@@ -328,6 +426,7 @@ nav {
         color: #2196F3;
         font-weight: 500;
         margin-bottom: 32px;
+        width: 300px;
     }
 
     .menu-connec-email {
@@ -337,10 +436,13 @@ nav {
     letter-spacing: 0.02em;
     color: #757575;
     font-style: normal;
+    width: 231px;
+    margin-bottom: 64px;
     }
 
     .menu-soc-list {
         display: flex;
+        margin-bottom: 48px;
     }
 
     .menu-soc-link {
@@ -362,4 +464,17 @@ nav {
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         padding-right: 10px;
 
+    }
+
+    .menu-link:hover {
+        color: var(--accent-color);
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-link:focus {
+        color:#2196F3;
+        cursor: pointer;
+        
     }
