@@ -50,10 +50,11 @@
         gap: 30px;
         @media screen and (min-width:480px) {
             flex-direction: column;
+            width: 100%;
         }
         @media screen and (min-width:768px) {
             display: flex;
-           width: 738px;
+           width: 100%;
            flex-wrap: wrap;
            flex-direction: row;
         }
@@ -75,10 +76,13 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         
-        
+        @media screen and (min-width:480px) {
+            width: 100%;
+            // height: calc(100% - 30px);   
+        }
         @media screen and (min-width:768px) {
-            width: 354px;
-            height: 536px;   
+            width: calc((100% - 30px) / 2);
+            height: calc((100% - 30px) / 4);   
         }
 
         @media screen and (min-width:1200px) {
