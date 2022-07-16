@@ -3,6 +3,7 @@
     padding-bottom: 60px;
     padding-top: 60px;
     @media screen and (min-width:1200px) {
+        padding-top: 94px;
         padding-bottom: 94px;
     }
 }
@@ -16,6 +17,20 @@
         letter-spacing: 0.03em;
         color: var(--header-color);
         margin-bottom: 30px;
+        @media screen and (min-width:1200px) {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+            
+            color: #212121;
+
+            margin-bottom: 50px;
+            
+        }
         
     }
     

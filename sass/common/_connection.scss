@@ -4,13 +4,17 @@
     } 
 
     @media screen and (min-width:768px) {
-        margin-top: 0px;
-        margin-left: 82.5px;
+        width: calc(100% / 2);
+        // margin-top: 0px;
+        padding-left: 82.5px;
+        margin-top: 0;
     }
 
     @media screen and (min-width:1200px) {
         margin-right: 93px;
         margin-left: 0;
+        width: 206px;
+        padding-left: 0;
     }
  
 }

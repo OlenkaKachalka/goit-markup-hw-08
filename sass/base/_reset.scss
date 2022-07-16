@@ -21,15 +21,17 @@ ul {
 
 .main-footer {
     @media screen and (min-width:768px) {
-        width: 232px;
+        width: calc(100% / 2);
         height: 79px;
-        margin-right: 82.5px;
-        margin-left: 62px;
+        padding-right: 82.5px;
+        padding-left: 62px;
     }
     @media screen and (min-width:1200px) {
         margin-right: 70px;
         width: 231px;
         margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
     
 }
@@ -42,7 +44,7 @@ img {
     display: block;
     width: 100%;
     min-width: 100%;
-    height: auto;
+    // height: auto;
 }
 
 

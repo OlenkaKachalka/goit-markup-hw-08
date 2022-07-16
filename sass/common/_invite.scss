@@ -1,10 +1,10 @@
 
    .invite {
     @media screen and (min-width:480px) {
-        width: 450px;
+        width: 100%;
     }
     @media screen and (min-width:768px) {
-    width: 738px;
+    width: 100%;
     }
     @media screen and (min-width:1200px) {
         width: 570px;
@@ -14,14 +14,23 @@
     
     .invite-content__form {
         @media screen and (min-width:480px) {
-            width: 450px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media screen and (min-width:768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         @media screen and (min-width:1200px) {
             display: flex;
             width: 570px;
-        // flex-direction: column;
-        // flex-direction: row;
-        // width: 358px;
+        flex-direction:row;
+        
+        
         }
     }
     
@@ -44,13 +53,14 @@
         font-style: normal;
         @media screen and (min-width:480px) {
             text-align: center;
-            width: 450px;
+            width: 100%;
             margin: 0;
         }
         @media screen and (min-width:768px) {
-            width: 219px;
+            width: 100%;
             margin-top: 60px;
-            margin-left: 267px;
+            text-align: center;
+            // margin-left: 267px;
     }
         @media screen and (min-width:1200px) {
             margin-top: 12px;
@@ -79,11 +89,11 @@
       transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @media screen and (min-width:480px) {
-            margin-left: 125px;
+            margin-left: 0;
             margin-top: 20px;
         }
         @media screen and (min-width:768px) {
-            margin-left: 276px;
+            margin-left: 0;
             margin-top: 20px;
         }
         @media screen and (min-width:1200px) {
@@ -114,14 +124,15 @@
         padding-left: 16px;
         color: #ffffff;
         @media screen and (min-width:480px) {
-            width: 450px;
+            width: 100%;
             height: 50px;
             margin-top: 20px;
         }
         @media screen and (min-width:768px) {
             width: 450px;
             height: 50px;
-            margin-left: 151px;
+            justify-content: center;
+            // margin-left: 151px;
         }
         @media screen and (min-width:1200px) {
             width: 358px;
