@@ -134,7 +134,7 @@
 
 .modal-content__icon-name {
     position: absolute;
-    top: 104px;
+    
     left: 52px;
     width: 18px;
     height: 18px;
@@ -145,6 +145,9 @@
     }
     @media  screen and (min-width:768px){
         top: 126px;
+    }
+    @media  screen and (min-width:768px){
+        top: 104px;
     }
   }
 
@@ -158,18 +161,23 @@
 
 .modal-content__icon-tel {
     position: absolute;
-    top: 171.76px;
     left: 53px;
     width: 18px;
     height: 18px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     @media  screen and (min-width:480px){
         top: 193px;
     }
     @media  screen and (min-width:768px){
         top: 193px;
     }
+
+    @media  screen and (min-width:1200px){
+        top: 171px;
+    }
+    
   }
 
   .modal-content__icon-tel:hover,
@@ -181,7 +189,7 @@
 
   .modal-content__icon-email {
     position: absolute;
-    top: 240px;
+    
     left: 52px;
     width: 18px;
     height: 18px;
@@ -190,6 +198,9 @@
     }
     @media  screen and (min-width:768px){
         top: 260px;
+    }
+    @media  screen and (min-width:1200px){
+        top: 240px;
     }
   }
 
@@ -261,7 +272,15 @@
         left: 125px;
         bottom: 40px;
         position: absolute;
-        
+    }
+    @media  screen and (min-width:768px){
+        width: 200px;
+        height: 50px;
+        top: 491px;
+        left: 164px;
+        right: 164px;
+        bottom: 40px;
+        position: absolute;
     }
 }
 

@@ -1,6 +1,5 @@
 .about {
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
     @media screen and (min-width:480px){
     padding-top: 60px;
     padding-bottom: 30px;
@@ -19,15 +18,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        width:100%;
+        // width:100%;
     }
       
     @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        // width: 100%;
         gap: 0;
-        
+       
     }
 }
     
