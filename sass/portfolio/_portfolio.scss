@@ -138,7 +138,7 @@
     
     .portfolio-content__item:nth-child(3n+2) {
         @media screen and (min-width:480px) {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
           }
         // @media screen and (min-width:1200px) {
         //   margin-right: 30px;
@@ -148,7 +148,7 @@
     
      .portfolio-content__item:nth-child(3n+1) {
         @media screen and (min-width:480px) {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
           }
         // @media screen and (min-width:1200px) {
         //     margin-right: 30px;
@@ -157,7 +157,7 @@
 
     .portfolio-content__item:nth-child(3n+3) {
         @media screen and (min-width:480px) {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
           }
         }
 

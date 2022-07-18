@@ -63,6 +63,10 @@
     .team-content__list {
         display: flex;
         gap: 30px;
+        @media screen and (min-width:320px) {
+            flex-direction: column;
+            width: 100%;
+        }
         @media screen and (min-width:480px) {
             flex-direction: column;
             width: 100%;
