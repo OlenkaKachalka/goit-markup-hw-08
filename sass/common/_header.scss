@@ -351,8 +351,17 @@ nav {
     
 
     .menu-open-btn {
-        display: block;
-        margin-left: auto;
+        // display: block;
+        // margin-left: auto;
+        @media screen and (min-width:320px) {
+            width: 24px;
+            height: 16px;
+            margin-top: 22px;
+            margin-right: 2px;
+            border-color: transparent;
+            background-color: #fff;
+            border: 0px;
+        }
         @media screen and (min-width:480px) {
             width: 24px;
             height: 16px;
@@ -360,6 +369,7 @@ nav {
             margin-right: 2px;
             border-color: transparent;
             background-color: #fff;
+            border: 0px;
         }
         @media screen and (min-width:768px) {
             display: none;

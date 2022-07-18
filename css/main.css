@@ -454,9 +454,16 @@ body {
   }
 }
 
-.menu-open-btn {
-  display: block;
-  margin-left: auto;
+@media screen and (min-width: 320px) {
+  .menu-open-btn {
+    width: 24px;
+    height: 16px;
+    margin-top: 22px;
+    margin-right: 2px;
+    border-color: transparent;
+    background-color: #fff;
+    border: 0px;
+  }
 }
 @media screen and (min-width: 480px) {
   .menu-open-btn {
@@ -466,6 +473,7 @@ body {
     margin-right: 2px;
     border-color: transparent;
     background-color: #fff;
+    border: 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2243,6 +2251,12 @@ label {
 .portfolio {
   outline: 1px solid #EEEEEE;
 }
+@media screen and (min-width: 320px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .portfolio {
     padding-top: 60px;
@@ -2281,6 +2295,11 @@ label {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) {
+  .portfolio-content__btn {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (min-width: 480px) {
   .portfolio-content__btn {
     margin-bottom: 15px;
@@ -2311,6 +2330,13 @@ label {
   color: var(--add-colar);
 }
 
+@media screen and (min-width: 320px) {
+  .portfolio-content__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
 @media screen and (min-width: 480px) {
   .portfolio-content__list {
     display: flex;
@@ -2337,6 +2363,12 @@ label {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .portfolio-content__sections-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 480px) {
   .portfolio-content__sections-list {
     display: flex;
@@ -2363,11 +2395,15 @@ label {
 }
 
 .portfolio-content__item {
-  width: 370px;
   background: #FFFFFF;
   outline: 1px solid #EEEEEE;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) {
+  .portfolio-content__item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 480px) {
   .portfolio-content__item {
@@ -2499,6 +2535,12 @@ label {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 320px) {
+  .portfolio-content__wrap-title {
+    width: 100%;
+    height: 355px;
+  }
 }
 @media screen and (min-width: 480px) {
   .portfolio-content__wrap-title {
