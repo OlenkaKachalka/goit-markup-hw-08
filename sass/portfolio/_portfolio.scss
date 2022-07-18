@@ -311,8 +311,7 @@
             overflow: hidden;
             padding-left: 24px;
             padding-right: 24px;
-            padding-top: 63px;
-            padding-bottom: 63px;
+            
             margin: 0;
             transform: translateY(101%);
             transition: transform 250ms linear;
@@ -321,24 +320,36 @@
             font-style: normal;
             
             font-weight: 400;
-            font-size: 18px;
+            
             line-height: 28px;
             letter-spacing: 0.03em;
             @media screen and (min-width:320px) {
                 width: 100%;
-                height:355px;
+                height:250px;
+                padding-top: 33px;
+            padding-bottom: 33px;
+            font-size: 14px;
             }
             @media screen and (min-width:480px) {
                 width: 100%;
                 height:355px;
+                padding-top: 63px;
+            padding-bottom: 63px;
+            font-size: 18px;
             }
             @media screen and (min-width:780px) {
                 // width: calc((100% - 3);
                 height:355px;
+                padding-top: 63px;
+            padding-bottom: 63px;
+            font-size: 18px;
             }
             @media screen and (min-width:1200px) {
                 max-width: 370px;
                 height:294px;
+                padding-top: 63px;
+            padding-bottom: 63px;
+            font-size: 18px;
             }
         }
     
